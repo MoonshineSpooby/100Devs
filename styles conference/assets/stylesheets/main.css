@@ -1,0 +1,439 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.grid,
+.col-1-3,
+.col-2-3,
+.col-1-5 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-3,
+.col-2-3,
+.col-1-5 {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-3 {
+  width: 33%;
+}
+.col-2-3{
+  width: 66%;
+}
+.col-1-5{
+  width: 20%
+
+}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+.hero {
+  text-align: center;
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+
+}
+body {
+  background: #293f50;
+  color: #888;
+}
+p{
+  text-indent: 20px;
+  text-shadow: 3px 6px 2px rgba(f, f, f, .3);
+}
+h1, h2, h3, h4, h5, p, a{
+  margin-bottom: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+header h1 {
+  font-size: xxx-large;
+  color: teal;
+  text-align: center;
+  text-decoration: underline green;
+  border: thick double royalblue;
+  border-radius: 10px;
+  background: yellow;
+  text-shadow: 15px 6px 2px rgba(188, 26, 69, .2);
+
+}
+.lead h1 {
+  font-size: xx-large;
+  text-decoration: underline black;
+}
+h2 {
+  font-size: x-large;
+  color: orange;
+  text-align: center;
+}
+h3, h4, h5 {
+  font-size: x-large;
+  color: seagreen;
+  text-align: center;
+}
+h6 {
+  font-size: x-large;
+  color: seagreen;
+}
+
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+.primary-header {
+  padding-top: 30px;
+}
+.primary-header .col-2-3 {
+  text-align: right;
+}
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.primary-footer {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+
+
+}
+
+.lead {
+  text-align: center;
+  font-size: 22px;
+  color: orange;
+}
+.primary-footer li,
+.primary-header li{
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+#footer-nav{
+  text-align: right;
+}
+
+
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #77a198;
+}
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.hero {
+  padding: 22px 80px 66px 80px;
+}
+aside {
+  float: right;
+}
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row {
+  background: #fff;
+  min-width: 960px;
+  padding: 66px 0 44px 0;
+}
+.row,
+.row-alt {
+  min-width: 960px;
+}
+.row,
+.row-alt{
+  min-width: 960px;
+}
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+.row-alt {
+   background: #cbe2c1;
+   background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+   padding: 44px 0 22px 0;
+ }
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a:hover {
+  color: #a9b2b9;
+}
+a {
+  color: #648880;
+  text-decoration: none;
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
+  
+.speaker-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding: 22px 0;
+  text-align: center;
+}
+.speaker {
+  margin-bottom: 44px;
+  text-align: left;
+}
+/*
+  ========================================
+  Venue
+  ========================================
+*/
+.venue-hotel p, .venue-theatre p{
+  text-indent: 0;
+}
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
+}
+/*
+  ========================================
+  Register
+  ========================================
+*/
+
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+form {
+  margin-bottom: 22px;
+}
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+}
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+.register-group textarea {
+  height: 78px;
+}
+/*
+  ========================================
+  Schedule
+  ========================================
+*/
+
+table {
+  margin-bottom: 44px;
+  width: 100%;
+}
+table:last-child {
+  margin-bottom: 0;
+}
+th,
+td {
+  padding-bottom: 22px;
+  vertical-align: top;
+}
+th {
+  padding-right: 45px;
+  text-align: right;
+  width: 20%;
+}
+td {
+  width: 40%;
+}
+thead {
+  line-height: 44px;
+}
+thead th {
+  color: #648880;
+  font-size: 24px;
+}
+tbody th {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 22px;
+  text-transform: uppercase;
+}
+tbody td {
+  border-top: 1px solid #dfe2e5;
+  padding-top: 21px;
+}
+tbody td:first-of-type {
+  padding-right: 15px;
+}
+tbody td:last-of-type {
+  padding-left: 15px;
+}
+tbody td:only-of-type {
+  padding-left: 0;
+  padding-right: 0;
+}
+table a {
+  color: #888;
+}
+table h4 {
+  margin-bottom: 0;
+}
+.schedule-offset {
+  color: #a9b2b9;
+}

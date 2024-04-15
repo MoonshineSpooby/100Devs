@@ -1,0 +1,177 @@
+/*
+  ========================================
+  100devs - Tech Crunch Clone
+  Thomas Alden 4/1/24
+  ========================================
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Layout
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+header {
+    position: absolute;
+}
+.column-nav ul{
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+nav li {
+    padding: 8px 0;
+}
+.login {
+    padding-bottom: 28px;
+}
+.mainStoryAndSideStory, .topStories {
+    margin-left: 15%;
+    margin-right: 2%;
+}
+.mainStoryAndSideStory {
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+.mainStory {
+    width: 55%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 15px 15px 15px 0;
+}
+.sideStoriesColumn {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 15px 15px 15px 0;
+}
+.noPicStory {
+    display: flex;
+    flex-flow: column nowrap;
+    border-bottom: thin solid gray;
+    padding: 8px 0;
+}
+.topStories {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 85%;
+}
+.topStory, .topStories>h4{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: thin solid gray;
+    padding: 8px 0;
+}
+.topStory > * {
+    width: 29%;
+}
+.topStoryTitle {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.smallTcPlusLogo {
+    width: 10%;
+}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+body {
+    font-family: sans-serif;
+    color: black;
+    font-size: 18px;
+}
+header  {
+    font-weight: 200;
+}
+.tcPlus, .login {
+    font-size: smaller;
+    font-weight: 300;
+}
+.tcPlus {
+    color: rgb(218, 165, 32);
+}
+h2, h3, .author {
+    font-weight: 700;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+.author, .timeDate {
+    font-size: .6rem;
+}
+.timeDate {
+    font-weight: 200;
+}
+.topStorySummary{
+    font-size: .7rem;
+}

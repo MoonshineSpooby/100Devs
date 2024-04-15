@@ -1,0 +1,239 @@
+/*
+  ========================================
+  100devs - Layout practice 2
+  Thomas Alden 3/8/24
+  ========================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  General Typography
+  ========================================
+*/
+body {
+  font: 16px serif;
+  color: white;
+  font-weight: 600;
+}
+a:hover, a:link, a:visited{
+  color: white;
+  text-decoration: none;
+}
+.main-story h2 {
+  font-size: 1.75em;
+  font-weight: 800;
+}
+.main-story p {
+  font-weight: 500;
+}
+.small-story {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.story-container a:hover{
+  text-decoration: underline;
+}
+.nav-links a {
+  font-family: sans-serif;
+  font-weight: 900;
+}
+.news-time-category {
+  font-family: sans-serif;
+  font-size: .9rem;
+  color: grey;
+}
+
+.news-time-category .category-id{
+  font-size: .9rem;
+  color: white;
+  font-weight: 700;
+}
+/*
+  ========================================
+  Layout
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+  background: black;
+  position: absolute;
+}
+
+nav {
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  background: black;
+}
+
+.top-bar-nav, .nav-links{
+  border-bottom: 2px solid grey;
+  align-items: center;
+}
+.top-bar-nav {
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+  justify-content: space-between;
+}
+
+.top-bar-nav div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  height: 40%;
+}
+.nav-links a {
+  padding: 4px 15px;
+}
+.nav-links a[href*=earth] {
+  border-right: 2px solid grey;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+.news-time-category {
+  margin-top: 5%;
+
+}
+.news-time-category li {
+  padding-right: 2%;
+}
+.news-time-category li:first-child {
+  padding-right: 3%;
+  border-right: 2px solid grey;
+}
+.news-time-category li:nth-child(2){
+  padding-left: 3%;
+}
+.main-story-container {
+  margin: 0 auto;
+  margin-top: 130px;
+  display: block;
+  width: 80%;
+}
+.main-story-container div {
+  margin: 2%;
+}
+.small-story-container div {
+  margin: 1%;
+}
+
+.main-story {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 80%;
+}
+.main-story img {
+  width: 65%;
+}
+.main-story-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.small-story-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.small-story {
+  width: 16%;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+.nav-links a:hover{
+  background: grey;
+}
+.btn {
+  padding: 0 10px;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 1em;
+
+}
+.register-btn {
+  border: 3px solid grey;
+}
+/*
+  ========================================
+  Layout
+  ========================================
+*/
+/*
+  ========================================
+  Layout
+  ========================================
+*/
