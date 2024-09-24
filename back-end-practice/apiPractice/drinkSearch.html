@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Drinkin</title>		
+
+		<link rel="stylesheet" type="text/css" href="Assets/style.css">
+	</head>
+    <body>
+        <header>
+            <nav>
+                <div class="dropDownMenu">
+                    <span>Broad Strokes</span>
+                    <ul class="dropDownContent" id="categoryDropDown"></ul>
+                </div>
+                <div class="dropDownMenu">
+                    <span>Whatcha Pourin' Into?</span>
+                    <ul class="dropDownContent" id="glassesDropDown"></ul>
+                </div>
+                <div class="dropDownMenu">
+                    <span>Ingredients</span>
+                    <ul class="dropDownContent" id="ingredientsDropDown"></ul>
+                </div>
+                <div class="dropDownMenu">
+                    <span>Alcoholic?</span>
+                    <ul class="dropDownContent" id="alcoholDropDown"></ul>
+                </div>                
+            </nav>
+        </header> 
+        <input type="search" id="drinkSearch" name="drinkSearch">
+        <section id="searchResults">
+            
+            <div class="detailedResult">
+                <img src="#"/>
+                <p id="instructions"></p>
+                <p id="ingredientTable"></p>                    
+            </div>
+            
+            
+            <div class="searchResultCard">
+                <img class="cardImg" src="#"/>
+                <p class="cardName">#</p>
+            </div>
+            
+            
+        </section> 
+        <footer>
+
+        </footer>
+
+    </body>
+	<script src="./Assets/script.js"></script>
+    <script src="./Assets/categories.js"></script>
+</html>
